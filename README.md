@@ -206,8 +206,7 @@ GitHub : github.com/vimalrajmandal586
 ---
 
 ## 📜 License
-This project is free to use
-for learning purposes!
+This project is free to use for learning purposes!
 
 Made with ❤️ in India 🇮🇳
 
