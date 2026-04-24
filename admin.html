@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- LOGIN -->
+        <div id="loginSection" class="card">
+            <h2>🔒 Admin Login</h2>
+            <p class="subtitle">Only the quiz creator can enter here!</p>
+            <label>🔑 Password:</label>
+            <input 
+                type="password" 
+                id="adminPassword" 
+                placeholder="Enter your secret password..."
+            />
+            <button class="main-btn" onclick="adminLogin()">
+                🔓 Login
+            </button>
+            <p id="loginError" class="error"></p>
+            <br>
+            <a href="index.html" style="color:#a8b2d8; font-size:0.85rem;">
+                ← Back to Quiz
+            </a>
+        </div>
+
+        <!-- DASHBOARD -->
+        <div id="dashboardSection" style="display:none;">
+
+            <div class="admin-header">
+                <h2>📊 Admin Dashboard</h2>
+                <button class="logout-btn" onclick="adminLogout()">
+                    🚪 Logout
+                </button>
+            </div>
+
+            <!-- STATS ROW -->
+            <div class="stats-row">
+                <div class="stat-box">
+                    <span class="stat-number" id="totalPlayers">0</span>
+                    <span class="stat-label">Total Players</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" id="totalQuizzes">0</span>
+                    <span class="stat-label">Quizzes Played</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" id="avgScore">0</span>
+                    <span class="stat-label">Avg Score</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" id="totalReviews">0</span>
+                    <span class="stat-label">Reviews</span>
+                </div>
+            </div>
+
+            <!-- TABS -->
+            <div class="tab-bar">
+                <button 
+                    class="tab-btn active" 
+                    onclick="showTab('resultsTab', this)"
+                >
+                    🏆 Results
+                </button>
+                <button 
+                    class="tab-btn" 
+                    onclick="showTab('reviewsTab', this)"
+                >
+                    ✍️ Reviews
+                </button>
+            </div>
+
+            <!-- RESULTS TAB -->
+            <div id="resultsTab" class="tab-content">
+                <div class="tab-controls">
+                    <input 
+                        type="text" 
+                        id="searchBox" 
+                        placeholder="🔍 Search by name..."
+                        oninput="filterResults()"
+                        style="margin-top:0;"
+                    />
+                    <button 
+                        class="danger-btn" 
+                        onclick="clearResults()"
+                    >
+                        🗑️ Clear All
+                    </button>
+                </div>
+                <div id="resultsContainer">
+                    <!-- Results loaded by JS -->
+                </div>
+            </div>
+
+            <!-- REVIEWS TAB -->
+            <div id="reviewsTab" class="tab-content" style="display:none;">
+                <div class="tab-controls">
+                    <button 
+                        class="danger-btn" 
+                        onclick="clearReviews()"
+                    >
+                        🗑️ Clear All Reviews
+                    </button>
+                </div>
+                <div id="reviewsContainer">
+                    <!-- Reviews loaded by JS -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

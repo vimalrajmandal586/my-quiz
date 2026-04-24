@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Results!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- SCORE SECTION -->
+        <div class="card result-top-card">
+            <h1>🏆 Quiz Complete!</h1>
+            <p id="resultName" class="subtitle"></p>
+            <p id="resultQuizName" class="subtitle"></p>
+
+            <!-- BIG SCORE CIRCLE -->
+            <div class="score-circle">
+                <div class="score-inner">
+                    <span id="scoreDisplay">0/5</span>
+                    <span class="score-label">Score</span>
+                </div>
+            </div>
+
+            <!-- Stars -->
+            <div id="starsDisplay" class="stars-row"></div>
+
+            <!-- Message -->
+            <p id="resultMessage" class="result-message"></p>
+            <p id="resultDate" class="small-text"></p>
+        </div>
+
+        <!-- REVIEW ANSWERS SECTION -->
+        <div class="card">
+            <h2>📋 Review Your Answers</h2>
+            <p class="subtitle">See which ones you got right or wrong!</p>
+            <div id="reviewContainer">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="action-buttons">
+
+            <!-- Play other quizzes -->
+            <h3 style="color:#ccd6f6; margin-bottom:15px;">
+                🎮 Try Another Quiz!
+            </h3>
+
+            <div id="otherQuizButtons">
+                <!-- Filled by JS — shows quizzes not yet played -->
+            </div>
+
+            <!-- Leave Review -->
+            <button 
+                class="review-btn" 
+                onclick="window.location.href='review.html'"
+            >
+                ✍️ Leave a Review / Feedback
+            </button>
+
+            <!-- Play Same Again -->
+            <button 
+                class="retry-btn" 
+                onclick="playAgainSame()"
+            >
+                🔄 Try Same Quiz Again
+            </button>
+
+            <!-- Home -->
+            <button 
+                class="home-btn" 
+                onclick="window.location.href='index.html'"
+            >
+                🏠 Go To Home
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

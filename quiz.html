@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TOP BAR -->
+        <div class="top-bar">
+            <div class="player-tag" id="playerDisplay">👤 Player</div>
+            <div class="score-tag" id="liveScore">Score: 0</div>
+        </div>
+
+        <!-- QUIZ TITLE -->
+        <h2 id="quizTitle" class="quiz-title">Quiz</h2>
+
+        <!-- PROGRESS -->
+        <div class="progress-wrap">
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <p id="progressText" class="progress-text">Question 1 of 5</p>
+        </div>
+
+        <!-- QUESTION CARD -->
+        <div class="card" id="questionCard">
+
+            <!-- Question Number Badge -->
+            <div class="q-number" id="qNumber">Q1</div>
+
+            <!-- Question Text -->
+            <p id="questionText" class="question-text"></p>
+
+            <!-- Options -->
+            <div id="optionsContainer" class="options-grid">
+            </div>
+
+            <!-- Feedback Message -->
+            <div id="feedbackMsg" class="feedback-msg"></div>
+
+            <!-- Next Button -->
+            <button 
+                id="nextBtn" 
+                class="main-btn" 
+                onclick="nextQuestion()" 
+                disabled
+            >
+                Next Question ➡️
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>✍️ Leave Your Review!</h2>
+            <p class="subtitle" id="reviewPlayerName">Share your thoughts!</p>
+
+            <!-- Star Rating -->
+            <label>⭐ Rate This Quiz:</label>
+            <div class="star-rating" id="starRating">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+            </div>
+            <p id="starLabel" class="star-label">Click to rate!</p>
+
+            <!-- What they liked -->
+            <label for="likedText">👍 What did you like?</label>
+            <textarea 
+                id="likedText" 
+                placeholder="Tell what you enjoyed..."
+                rows="3"
+            ></textarea>
+
+            <!-- Suggestions -->
+            <label for="suggestText">💡 Any suggestions?</label>
+            <textarea 
+                id="suggestText" 
+                placeholder="Any improvements or topics you'd like..."
+                rows="3"
+            ></textarea>
+
+            <!-- Difficulty -->
+            <label for="difficulty">🎯 How difficult was the quiz?</label>
+            <select id="difficulty">
+                <option value="">-- Select --</option>
+                <option value="Very Easy">😴 Very Easy</option>
+                <option value="Easy">🙂 Easy</option>
+                <option value="Medium">😐 Medium</option>
+                <option value="Hard">😤 Hard</option>
+                <option value="Very Hard">🤯 Very Hard</option>
+            </select>
+
+            <!-- Would recommend -->
+            <label>📢 Would you recommend this quiz?</label>
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="recommend" value="Yes"/> 
+                    Yes! Definitely
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="recommend" value="Maybe"/> 
+                    Maybe
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="recommend" value="No"/> 
+                    Not really
+                </label>
+            </div>
+
+            <button class="main-btn" onclick="submitReview()">
+                📨 Submit Review
+            </button>
+
+            <p id="reviewError" class="error"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

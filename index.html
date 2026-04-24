@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To My Quiz!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1>🎉 WELCOME TO MY QUIZ! 🎉</h1>
+            <p class="subtitle">Test your knowledge with 3 amazing quizzes!</p>
+        </div>
+
+        <!-- QUIZ CARDS -->
+        <div class="quiz-info-cards">
+            <div class="info-card">
+                <span class="info-icon">🧠</span>
+                <span>Psychological Understanding</span>
+                <span class="badge">5 Questions</span>
+            </div>
+            <div class="info-card">
+                <span class="info-icon">🤖</span>
+                <span>AI Current Affairs</span>
+                <span class="badge">5 Questions</span>
+            </div>
+            <div class="info-card">
+                <span class="info-icon">➗</span>
+                <span>Basic Math</span>
+                <span class="badge">5 Questions</span>
+            </div>
+        </div>
+
+        <!-- ENTRY FORM -->
+        <div class="card">
+            <h2>🚀 Start Playing!</h2>
+
+            <label for="playerName">👤 Your Name:</label>
+            <input 
+                type="text" 
+                id="playerName" 
+                placeholder="Enter your name..."
+                maxlength="30"
+            />
+
+            <label for="quizChoice">🎯 Choose Quiz:</label>
+            <select id="quizChoice">
+                <option value="">-- Select a Quiz --</option>
+                <option value="1">🧠 Psychological Understanding</option>
+                <option value="2">🤖 AI Current Affairs</option>
+                <option value="3">➗ Basic Math Questions</option>
+            </select>
+
+            <button class="main-btn" onclick="startQuiz()">
+                🚀 START QUIZ!
+            </button>
+
+            <p id="errorMsg" class="error"></p>
+        </div>
+
+        <!-- ADMIN HIDDEN LINK -->
+        <div class="admin-link">
+            <a href="admin.html">🔒</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
