@@ -1,7 +1,7 @@
 // ============================================================
 //  PASTE YOUR GOOGLE SCRIPT URL HERE
 // ============================================================
-const SHEET_URL = "PASTE-YOUR-URL-HERE";
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbxJFSwBP6wYeNZ0z81QfIL6ZIZZ5g6BEfP3CVmhgLZ5hvJ2UAst8_PQT2EMXFRLNVcu/exec";
 
 // ============================================================
 //  YOUR ADMIN PASSWORD
