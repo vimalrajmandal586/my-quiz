@@ -52,21 +52,18 @@ web application with real-time data collection!
 Tests your knowledge of human behavior,
 cognitive biases, memory, and psychology!
 
-text
 
 
 ### 🤖 AI Current Affairs
 Test how up to date you are with
 the latest in Artificial Intelligence!
 
-text
 
 
 ### ➗ Basic Math Questions
 Sharpen your math skills with
 profit/loss, algebra and geometry!
 
-text
 
 
 ---
@@ -80,7 +77,6 @@ Step 5 → See your score and review answers
 Step 6 → Try other quizzes!
 Step 7 → Leave a review!
 
-text
 
 
 ---
@@ -92,7 +88,7 @@ JavaScript → Game logic and data
 Google Sheets → Data storage (free!)
 GitHub Pages → Free hosting
 
-text
+
 
 
 ---
@@ -109,7 +105,7 @@ my-quiz/
 ├── ⚙️ script.js → All game logic
 └── 📝 README.md → This file!
 
-text
+
 
 
 ---
@@ -127,7 +123,7 @@ When someone plays the quiz:
 ✅ Their feedback
 ✅ Difficulty opinion
 
-text
+
 
 
 All data goes to Google Sheets!
@@ -147,7 +143,7 @@ Admin can see:
 → All reviews and ratings
 → Statistics
 
-text
+
 
 
 ---
@@ -159,7 +155,7 @@ Beautiful dark themed home page
 with quiz category cards and
 smooth entry animation
 
-text
+
 
 
 ### Quiz Page  
@@ -168,7 +164,7 @@ Progress bar
 Instant answer feedback
 Color coded correct/wrong
 
-text
+
 
 
 ### Results Page
@@ -177,7 +173,7 @@ Full answer review
 Option to play other quizzes
 Leave a review button
 
-text
+
 
 
 ---
@@ -192,7 +188,7 @@ text
 ✅ Responsive mobile design
 ✅ Data collection from web apps
 
-text
+
 
 
 ---
@@ -202,7 +198,7 @@ Name : Vimal Raj Mandal
 Country : India
 GitHub : github.com/vimalrajmandal586
 
-text
+
 
 
 > *"Started with Python, built a whole website!"*
@@ -215,7 +211,7 @@ for learning purposes!
 
 Made with ❤️ in India 🇮🇳
 
-text
+
 
 
 ---
