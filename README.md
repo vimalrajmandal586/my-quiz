@@ -199,8 +199,8 @@ text
 
 ## 👤 About The Creator
 Name : Vimal Raj Mandal
-Country : India 🇮🇳
-GitHub : github.com/YOUR-USERNAME
+Country : India
+GitHub : github.com/vimalrajmandal586
 
 text
 
